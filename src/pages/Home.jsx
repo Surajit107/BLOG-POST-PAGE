@@ -35,8 +35,8 @@ function Home() {
 
             <BlogTitles
                 search={search}
-                currentBlogs={currentBlogs}
                 setSearch={setSearch}
+                currentBlogs={currentBlogs}
             />
 
             <Pagination
