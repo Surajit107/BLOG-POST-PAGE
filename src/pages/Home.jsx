@@ -7,7 +7,7 @@ import BlogTitles from './BlogTitles'
 
 function Home() {
 
-    const [blog, setBlog] = useState([])
+    const [blogs, setBlogs] = useState([])
     const [search, setSearch] = useState("")
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage] = useState(3)
@@ -17,15 +17,15 @@ function Home() {
     useEffect(() => {
         const getAllBlogs = async () => {
             const res = await getBlogs()
-            setBlog(res.data)
+            setBlogs(res.data)
         }
         getAllBlogs()
     }, [id])
 
 
-    const indecOfLastPost = (currentPage * postPerPage)
-    const indecOfFirstPost = (indecOfLastPost - postPerPage)
-    const currentBlogs = blog.reverse().slice(indecOfFirstPost, indecOfLastPost)
+    const indexOfLastPost = (currentPage * postPerPage)
+    const indexOfFirstPost = (indexOfLastPost - postPerPage)
+    const currentBlogs = blogs.reverse().slice(indexOfFirstPost, indexOfLastPost)
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
@@ -41,7 +41,7 @@ function Home() {
 
             <Pagination
                 postPerPage={postPerPage}
-                totalPosts={blog.length}
+                totalPosts={blogs.length}
                 paginate={paginate}
             />
         </>

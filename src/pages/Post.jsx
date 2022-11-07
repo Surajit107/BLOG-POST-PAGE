@@ -33,7 +33,7 @@ function Post() {
               <p> {posts.post} </p>
               <p> {posts.owner} </p>
               <p> {posts.date} </p>
-              <Link to={`/${posts.id}`} className="btn btn-primary btn-sm text-uppercase">Read Less..</Link>
+              <Link to="/" className="btn btn-primary btn-sm text-uppercase">Read Less..</Link>
             </div>
           </div>
         </div>

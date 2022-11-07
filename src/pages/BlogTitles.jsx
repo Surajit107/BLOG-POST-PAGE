@@ -9,11 +9,11 @@ const BlogTitles = ({ search, currentBlogs, setSearch }) => {
                     <div className="col-md-10 col-lg-8 col-xl-7">
                         <nav className="navbar bg-light">
                             <div className="container col-6">
-                                <form className="d-flex" role="search">
+                                <form className="d-flex justify-content-around" role="search">
                                     <input
                                         className="form-control me-2"
                                         type="search"
-                                        placeholder="Search..."
+                                        placeholder="Search Blogs..."
                                         value={search}
                                         onChange={(e) => setSearch(e.target.value)}
                                     />
@@ -23,12 +23,13 @@ const BlogTitles = ({ search, currentBlogs, setSearch }) => {
                         <hr className="my-4" />
 
                         {
-                            currentBlogs.filter((value) => {
+                            currentBlogs.filter((blog) => {
                                 if (search === "") {
-                                    return value;
-                                } else if (value.title.toLowerCase().includes(search.toLowerCase())) {
-                                    return value;
+                                    return blog;
+                                } else if (blog.title.toLowerCase().includes(search.toLowerCase())) {
+                                    return blog;
                                 }
+                                return blog;
                             }).map((curBlog) => {
                                 return (
 
