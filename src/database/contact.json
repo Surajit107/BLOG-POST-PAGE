@@ -28,5 +28,12 @@
       "message": "Ohhh!!!! Yeahhhhh!!!! ",
       "id": 4
     }
+  ],
+  "loginData": [
+    {
+      "username": "surajit",
+      "password": "1234",
+      "bool": false
+    }
   ]
 }
