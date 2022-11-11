@@ -1,84 +1,92 @@
 {
   "blogs": [
     {
-      "title": "Man must explore, and this is exploration at its greatest",
-      "subtitle": "Problems look mighty small from 150 miles up",
-      "post": "This post is from id 1",
-      "owner": "Surajit ",
+      "title": "Array in JavaScript",
+      "subtitle": "JavaScript array is an object that represents a collection of similar type of elements.",
+      "post": "In JavaScript, arrays aren't primitives but are instead Array objects with the following core characteristics:\n JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.)\n JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes.\n JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1.\n JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).\n Array objects cannot use arbitrary strings as element indexes (as in an associative array) but must use nonnegative integers (or their respective string form). Setting or accessing via non-integers will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection. The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.",
+      "owner": "Surajit Pal",
       "date": "August 20 , 2022",
       "id": 1
     },
     {
-      "title": "I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.",
-      "subtitle": "",
-      "post": "This post is from id 2",
-      "owner": "Surajit ",
+      "title": "JavaScript Objects",
+      "subtitle": "A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc.",
+      "post": "JavaScript is an object-based language. Everything is an object in JavaScript.\n JavaScript is template based not class based. Here, we don't create class to get the object. But, we direct create objects.\n 1) By object literal\n 2) By creating instance of Object directly (using new keyword)\n 3)By using an object constructor (using new keyword)\n JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.\n Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.\n In addition to objects that are predefined in the browser, you can define your own objects. This chapter describes how to use objects, properties, and methods, and how to create your own objects.\n You can create an object using an object initializer. Alternatively, you can first create a constructor function and then instantiate an object by invoking that function with the new operator.",
+      "owner": "Subhadeep Panda",
       "date": "September 15 , 2022",
       "id": 2
     },
     {
-      "title": "Science has not yet mastered prophecy",
-      "subtitle": "We predict too much for the next year and yet far too little for the next ten.",
-      "post": "This post is from id 3",
-      "owner": "Surajit ",
+      "title": "Classes in JavaScript",
+      "subtitle": "In JavaScript, classes are the special type of functions. We can define the class just like function declarations and function expressions.",
+      "post": "Object-oriented programming (OOP) is a programming paradigm fundamental to many programming languages, including Java and C++. In this article, we'll provide an overview of the basic concepts of OOP. We'll describe three main concepts: classes and instances, inheritance, and encapsulation. For now, we'll describe these concepts without reference to JavaScript in particular, so all the examples are given in pseudocode.\n After that, in JavaScript, we'll look at how constructors and the prototype chain relate to these OOP concepts, and how they differ. In the next article, we'll look at some additional features of JavaScript that make it easier to implement object-oriented programs.\n When we model a problem in terms of objects in OOP, we create abstract definitions representing the types of objects we want to have in our system. For example, if we were modeling a school, we might want to have objects representing professors. Every professor has some properties in common: they all have a name and a subject that they teach. Additionally, every professor can do certain things: they can all grade a paper and they can introduce themselves to their students at the start of the year, for example.",
+      "owner": "Surajit Pal",
       "date": "October 10 , 2022",
       "id": 3
     },
     {
-      "title": "Failure is not an option",
-      "subtitle": "Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
-      "post": "",
-      "owner": "Surajit ",
-      "date": "November 10 , 2022",
+      "title": "Array.prototype.map()",
+      "subtitle": "The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.",
+      "post": "map calls a provided callbackFn function once for each element in an array, in order, and constructs a new array from the results.\n callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots in sparse arrays.\n callbackFn is invoked with three arguments: the value of the element, the index of the element, and the array object being mapped.\n If a thisArg parameter is provided, it will be used as callback's this value. Otherwise, the value undefined will be used as its this value. The this value ultimately observable by callbackFn is determined according to the usual rules for determining the this seen by a function.\n The map() method is a copying method. It does not alter this.\n The map() method is generic. It only expects the this value to have a length property and integer-keyed properties.\n The range of elements processed by map is set before the first invocation of callbackFn. Elements which are assigned to indexes already visited, or to indexes outside the range, will not be visited by callbackFn. If existing elements of the array are changed after the call to map, their value will be the value at the time callbackFn visits them. Elements that are deleted after the call to map begins and before being visited are not visited.\n Since map builds a new array, calling it without using the returned array is an anti-pattern; use forEach or for...of instead.",
+      "owner": "Surajit Pal",
+      "date": "October 10 , 2022",
       "id": 4
     },
     {
-      "title": "Surajit's Blog",
-      "subtitle": "I don't have subtitles in my blog",
-      "post": "This My first Blog",
+      "title": "Understanding Higher-Order Functions in JavaScript",
+      "subtitle": "Learn What Higher-Order Functions are and how to use them in JavaScript",
+      "post": "If you are learning JavaScript, you must have come across the term Higher-Order Functions. Although it may sound complicated, it isn’t.What makes JavaScript suitable for functional programming is that it accepts Higher-Order Functions.Higher-Order Functions are extensively used in JavaScript. If you have been programming in JavaScript for a while, you may have already used them without even knowing.To fully understand this concept, you first have to understand what Functional Programming is and the concept of First-Class Functions.\n If you have been learning JavaScript, you may have heard that JavaScript treats functions as first-class citizens. That’s because in JavaScript or any other functional programming languages functions are objects.\n In JavaScript, everything you can do with other types like object, string, or number, you can do with functions. You can pass them as parameters to other functions (callbacks), assign them to variables and pass them around etc. This is why functions in JavaScript are known as First-Class Functions.",
       "owner": " Surajit Pal",
       "date": "October 29 , 2022",
       "id": 5
     },
     {
-      "title": "Chandana's Blog",
-      "subtitle": "She has no subtitle to write",
-      "post": "This is her 10th blog in my page",
+      "title": "State and Lifecycle in React JS",
+      "subtitle": "Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.\n The three phases are: Mounting, Updating, and Unmounting.\n ",
+      "post": "The state is an updatable structure that is used to contain data or information about the component. The state in a component can change over time. The change in state over time can happen as a response to user action or system event. A component with the state is known as stateful components. It is the heart of the react component which determines the behavior of the component and how it will render. They are also responsible for making a component dynamic and interactive.\n A state must be kept as simple as possible. It can be set by using the setState() method and calling setState() method triggers UI updates. A state represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly. To set an initial state before any interaction occurs, we need to use the getInitialState() method.In ReactJS, every component creation process involves various lifecycle methods. These lifecycle methods are termed as component's lifecycle. These lifecycle methods are not very complicated and called at various points during a component's life. The lifecycle of the component is divided into four phases.\n 1. Initial Phase: It is the birth phase of the lifecycle of a ReactJS component. Here, the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. These default properties are done in the constructor of a component. The initial phase only occurs once and consists of the following methods.\n 2. Mounting Phase: In this phase, the instance of a component is created and inserted into the DOM.\n 3. Updating Phase: It is the next phase of the lifecycle of a react component. Here, we get new Props and change State. This phase also allows to handle user interaction and provide communication with the components hierarchy. The main aim of this phase is to ensure that the component is displaying the latest version of itself. Unlike the Birth or Death phase, this phase repeats again and again. \n 4. Unmounting Phase: It is the final phase of the react component lifecycle. It is called when a component instance is destroyed and unmounted from the DOM.",
       "owner": "Chandana Halder",
       "date": "October 29 , 2022",
       "id": 6
     },
     {
-      "title": "He don't need any title ",
-      "subtitle": "But he need a subtitle for attention",
-      "post": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas itaque eveniet officiis aliquam pariatur possimus quisquam beatae perferendis. Iure atque dolor non voluptatibus. Consectetur quis minima deserunt, optio, debitis mollitia possimus quasi fugiat reiciendis nulla quaerat eaque dignissimos inventore assumenda.",
-      "owner": "Person's Name",
+      "title": "React Forms",
+      "subtitle": "HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state.",
+      "post": "Forms are an integral part of any modern web application. It allows the users to interact with the application as well as gather information from the users. Forms can perform many tasks that depend on the nature of your business requirements and logic such as authentication of the user, adding user, searching, filtering, booking, ordering, etc. A form can contain text fields, buttons, checkbox, radio button, etc.\n Creating Form: React offers a stateful, reactive approach to build a form. The component rather than the DOM usually handles the React form. In React, the form is usually implemented by using controlled components.\n Uncontrolled component: The uncontrolled input is similar to the traditional HTML form inputs. The DOM itself handles the form data. Here, the HTML elements maintain their own state that will be updated when the input value changes. To write an uncontrolled component, you need to use a ref to get form values from the DOM. In other words, there is no need to write an event handler for every state update.You can use a ref to access the input field value of the form from the DOM.",
+      "owner": "Chandan Halder",
       "date": "November 2 , 2022",
       "id": 7
     },
     {
-      "title": "Lets write a title for him",
-      "subtitle": "Yes!! he definitely need a subtitle for understanding  ",
-      "post": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas itaque eveniet officiis aliquam pariatur possimus quisquam beatae perferendis. Iure atque dolor non voluptatibus. Consectetur quis minima deserunt, optio, debitis mollitia possimus quasi fugiat reiciendis nulla quaerat eaque dignissimos inventore assumenda.",
-      "owner": "Samir Fuddi",
+      "title": "Introducing Hooks in React JS",
+      "subtitle": "Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.",
+      "post": "Hooks are the new feature introduced in the React 16.8 version. It allows you to use state and other React features without writing a class. Hooks are the functions which 'hook into' React state and lifecycle features from function components. It does not work inside classes.\n Hooks are backward-compatible, which means it does not contain any breaking changes. Also, it does not replace your knowledge of React concepts.\n When to use a Hooks: If you write a function component, and then you want to add some state to it, previously you do this by converting it to a class. But, now you can do it by using a Hook inside the existing function component.\n Rules of Hooks : Hooks are similar to JavaScript functions, but you need to follow these two rules when using them. Hooks rule ensures that all the stateful logic in a component is visible in its source code.Do not call Hooks inside loops, conditions, or nested functions. Hooks should always be used at the top level of the React functions. This rule ensures that Hooks are called in the same order each time a components renders.You cannot call Hooks from regular JavaScript functions. Instead, you can call Hooks from React function components. Hooks can also be called from custom Hooks. ",
+      "owner": "Surajit Pal",
       "date": "November 2 , 2022",
       "id": 8
     },
     {
-      "title": "KHONJO AANONDO || Satyaki Banerjee latest song ",
-      "subtitle": "",
-      "post": "খোঁজো আনন্দ রচ আনন্দ/চেনো আনন্দের পথ রে\nদেখো আনন্দ মাখো আনন্দ/চলো আনন্দের পথ ধ'রে\nআনন্দে রাখলে আনন্দে থাকলে হয়/দীনতার অবসান রে\nগাও আনন্দ বও আনন্দ/রও আনন্দের অন্তরে\n\nযে জন আনন্দ বিলায়/সে হয় পরম প্রাণ রে\nযে জন আনন্দ কুড়ায়/সে হয় পরম সাথী রে\nযে জন আনন্দ কুড়ায়/সে হয় পরম প্রাণ রে\nযে জন আনন্দ বিলায়/সে হয় পরম সাথী রে।।\n\nফিরে এস রে মন ফিরে এস রে মন\nফিরে চল রে মন আনন্দে\n\n\nআনন্দ খোঁজো আনন্দ রচ/চেনো আনন্দের পথ রে\n\nবেঁধে বেঁধে থাকো বেঁধে বেঁধে রাখো/সজীব থাকো রে মন সবান্ধবে\nথাকো বেঁধে বেঁধে রাখো বেঁধে বেঁধে/সপ্রাণ থাকো রে মন সবান্ধবে\nজড়িয়ে বাঁচলে, বাঁচিয়ে জড়ালে/হৃদয়-মন তোর সিক্ত হবে\nসিঞ্চিত হবে এই রিক্ত ধরনী/সিক্ত প্রাণে রে সিক্ত মনে \n\nফিরে আয় ফিরে  আয়\nফিরে চল রে মন আনন্দে\nফিরে এস রে মন ফিরে এস রে মন\nফিরে চল রে মন আনন্দে\n \nখোঁজো আনন্দ রচ আনন্দ/চেনো আনন্দের পথ রে\n\n \nকাছে টানো কাছের মানো/পড়শিকে বন্ধু জেনো\nবন্ধু সখা মিলেমিশে/থাক রে মন\nএকতাই বল তবে, বলো রে বন্ধু সবে/বন্ধু সখা মিলেমিশে থাক রে\n\nভালোবাসিলে ভালোবাসা পাবে/পাইক-পেয়াদায় আর কাজ কী রে\nমনের জানলা খুলে দেখো/জগতের দরজা খুলে যাবে\nভালোবাসো যদি নিজেকে রে মন/পরকে আগে টানো কাছে রে\n\nফিরে এস রে মন ফিরে এস রে মন\nফিরে চল রে মন আনন্দে\nফিরে আয় ফিরে  আয়\nফিরে চল রে মন আনন্দে\n\n খোঁজো আনন্দ রচ আনন্দ/চেনো আনন্দের পথ রে\n\n \nহৃদয়ে যদি তুমি, প্রেম না রাখিলে/তবে কেমন তুমি ইনসান হে\nপ্রাণে যদি না প্রকৃতি মেলালে/তবে কেন রে মন মানুষ হলে\nপ্রাণেতে প্রাণ হে, যদি না সঁপিলে/প্রেমরসে তোমারে কেমনে ছোঁবে\n\n \nপ্রেমে থাকো, প্রেমে বাঁচো/হিন্দু মুসলিম বেছো না রে\nপ্রেমে থাকো, বাঁচো প্রেমে/ধর্ম জাত-পাত বেছো না রে\nথাকো প্রেমে, বাঁচো প্রেমে/সম-অসম তুমি বেছো না রে\nথাকো প্রেমে, বাঁচো প্রেমে/সম-অসম আর বেছো না রে\n\nফিরে এস রে মন ফিরে এস রে মন\nফিরে চল রে মন আনন্দে\n\nখোঁজো আনন্দ রচ আনন্দ/চেনো আনন্দের পথ রে\n\n \nঅন্তরে সাজো, অন্দর সাজাও/বাইরের রূপ কাল থাকবেনা রে\nটাকা-পয়সা জমিবাড়ি/ভোগে মোক্ষ নাই রে বলি\nঅর্থ মানে অনর্থক/এ মহাজনের বাণী\n\n \n\nমান আর হুঁশে, হয় যে মানব/অজ্ঞানতায় ঠেলোনা রে\nমানবী হয় যে মান আর হুঁশে/লোভ আর হিংসার ঠাঁই নাই রে\nমানুষের ধর্ম মানবতা-পথ/খাদ্যে পরিধানে চিনোনা রে\nশ্রমে মুক্তি আসে শ্রমে মুক্তি আসে/নিষ্কাম যাপন নিওনা রে\nনিজেরই শ্রম শক্তি দিয়ে/গড়ো আপন সমাজ রে\nশ্রমে মুক্তি আসে কামে মুক্তি আসে/নিষ্কাম যাপন নিওনা রে\nনিজেরই শ্রমে নিজেরই শক্তি দিয়ে/গড়ো আপনার সমাজ রে\n \nখোঁজো আনন্দ রচ আনন্দ/চেনো আনন্দের পথ রে\n\n \nমানবজীবন সার, যদি না নাও ভার/মানব মুক্তির স্বপনে\nএ জনম সার, যদি না গেলে আর/জগত মুক্তির শরনে \n\n \nভজ মানব, ভজ প্রকৃতি/ভজ মুক্তির পথ হে\nযে জনে আনন্দ পায় সে কাজে/সে পায় আলোর পথ রে\n\nফিরে এস রে মন ফিরে এস রে মন\nফিরে এস আনন্দের পথে রে\nখোঁজো আনন্দ রচ আনন্দ/চেনো আনন্দের পথ রে\nদেখো আনন্দ মাখো আনন্দ/হাঁটো আনন্দের পথ ধ'রে\nআনন্দে ভজিলে আনন্দ জপিলে হয়/দীনতার অবসান রে\nদেখো আনন্দ মাখো আনন্দ/হাঁটো আনন্দের পথ ধ'রে\nফিরে এস  ফিরে এস ফিরে এস ফিরে এস ফিরে চল রে মন আনন্দে\nফিরে এস আনন্দের পথে রে",
+      "title": "React Context",
+      "subtitle": "Context allows passing data through the component tree without passing props down manually at every level.",
+      "post": "In React application, we passed data in a top-down approach via props. Sometimes it is inconvenient for certain types of props that are required by many components in the React application. Context provides a way to pass values between components without explicitly passing a prop through every level of the component tree.How to use Context: There are two main steps to use the React context into the React application:Setup a context provider and define the data which you want to store.Use a context consumer whenever you need the data from the store.\n When to use Context : Context is used to share data which can be considered 'global' for React components tree and use that data where needed, such as the current authenticated user, theme, etc. For example, in the below code snippet, we manually thread through a 'theme' prop to style the Button component.\n In the above code, the Toolbar function component takes an extra 'theme' prop and pass it to the ThemedButton. It can become inconvenient if every single button in the app needs to know the theme because it would be required to pass through all components. But using context, we can avoid passing props for every component through intermediate elements.",
       "owner": "Satyaki Banerjee",
       "date": "November 3 , 2022",
       "id": 9
     },
     {
-      "title": "WELCOME TO THE NEW ERA OF CALL OF DUTY",
-      "subtitle": "A NEW IMMERSIVE CAMPAIGN EXPERIENCE",
-      "post": "Call of Duty®: Modern Warfare® II is the sequel to 2019’s blockbuster Modern Warfare®. Featuring the return of the iconic, team leader Captain John Price, the fearless John \"Soap\" MacTavish, the seasoned Sergeant Kyle \"Gaz” Garrick, and the lone wolf himself, fan favorite Simon “Ghost” Riley, players will witness what makes Task Force 141 the legendary squad it is today.\n\nFrom small-scale, high-stakes infiltration tactics to highly classified missions, players will need to leverage new weapons, vehicles, and cutting-edge equipment to take on their enemies. Gear up and take the fight offshore as you siege enemies underwater, breach a highly fortified enemy base, infil along the canals, and liberate much-needed allies at a black site hidden within the mountains.",
-      "owner": "Infinity Ward ",
+      "title": "Pointers in C",
+      "subtitle": "The pointer in C language is a variable which stores the address of another variable.",
+      "post": "This variable can be of type int, char, array, function, or any other pointer. The size of the pointer depends on the architecture. However, in 32-bit architecture the size of a pointer is 2 byte.\n Declaring a pointer : The pointer in c language can be declared using * (asterisk symbol). It is also known as indirection pointer used to dereference a pointer.\n As you can see in the above figure, pointer variable stores the address of number variable, i.e., fff4. The value of number variable is 50. But the address of pointer variable p is aaa3.\n Advantage of pointer: 1) Pointer reduces the code and improves the performance, it is used to retrieving strings, trees, etc. and used with arrays, structures, and functions. \n 2) We can return multiple values from a function using the pointer.\n 3) It makes you able to access any memory location in the computer's memory.",
+      "owner": "Surajit Pal",
       "date": "November 7 , 2022",
       "id": 10
+    },
+    {
+      "title": "PHP OOP - Interfaces",
+      "subtitle": " Interfaces make it easy to use a variety of different classes in the same way. When one or more classes use the same interface,  it is referred to as \"polymorphism\".",
+      "post": " Interfaces are declared with the interface keyword.\nInterface are similar to abstract classes.\nThe difference between interfaces and abstract classes are.\nInterfaces cannot have properties, while abstract classes can\nAll interface methods must be public,\nwhile abstract class methods is public or protected\nAll methods in an interface are abstract,\nso they cannot be implemented in code and the abstract keyword is not necessary\nClasses can implement an interface while inheriting from another class at the same time\nPHP - Using Interfaces :\nTo implement an interface, a class must use the implements keyword.\nA class that implements an interface must implement all of the interface's methods.\nFrom the example above, let's say that we would like to write software which manages a group of animals.\nThere are actions that all of the animals can do,\nbut each animal does it in its own way.",
+      "owner": "Chandan Halder",
+      "date": "November 8 , 2022",
+      "id": 11
     }
   ]
 }

@@ -9,7 +9,7 @@ function Header() {
                     <div className="col-md-10 col-lg-8 col-xl-7">
                         <div className="site-heading">
                             <h1>Home Blog</h1>
-                            <span className="subheading">A Blog Website by Surajit</span>
+                            <span className="subheading">A Blog Website by <span className='text-warning'>Surajit Pal</span></span>
                         </div>
                     </div>
                 </div>

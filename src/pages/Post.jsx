@@ -28,12 +28,12 @@ function Post() {
           <div className="row gx-4 gx-lg-5 justify-content-center">
             <div className="col-md-10 col-lg-8 col-xl-7">
 
-              <p> {posts.title} </p>
-              <p> {posts.subtitle} </p>
+              <p className='fw-bold fs-3'> {posts.title} </p>
+              <p className='fw-bold'> {posts.subtitle} </p>
               <p> {posts.post} </p>
               <p> {posts.owner} </p>
               <p> {posts.date} </p>
-              <Link to="/" className="btn btn-primary btn-sm text-uppercase">Read Less..</Link>
+              <Link to="/" className="btn btn-primary btn-sm text-uppercase rounded-1">Read Less..</Link>
             </div>
           </div>
         </div>

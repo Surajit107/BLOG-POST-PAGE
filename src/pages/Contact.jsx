@@ -92,7 +92,7 @@ function Contact() {
                                         <label htmlFor="message">Message</label>
                                     </div>
                                     <br />
-                                    <button className="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
+                                    <button className="btn btn-primary text-uppercase rounded-1" id="submitButton" type="submit">Send</button>
                                 </form>
                             </div>
                         </div>

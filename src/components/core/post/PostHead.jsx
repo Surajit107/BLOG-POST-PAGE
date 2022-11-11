@@ -13,7 +13,7 @@ function PostHead({title , subtitle, owner, date}) {
                                 <h2 className="subheading">{subtitle}</h2>
                                 <span className="meta">
                                     Posted by
-                                    <a href="#!"> {owner} </a>
+                                    <a href="#!" className='text-warning'> {owner} </a>
                                     on {date}
                                 </span>
                             </div>
