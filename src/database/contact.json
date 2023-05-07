@@ -34,13 +34,13 @@
       "phone": "9717164797",
       "message": "Hi!! I am Computer",
       "id": 5
-    }
-  ],
-  "loginData": [
+    },
     {
-      "username": "surajit",
-      "password": "1234",
-      "bool": false
+      "name": "Person One",
+      "email": "person@gmail.com",
+      "phone": "7198797987",
+      "message": "I am PC",
+      "id": 6
     }
   ]
 }

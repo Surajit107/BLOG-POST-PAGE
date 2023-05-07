@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://192.168.123.7:3002/blogs"
+const url = "http://localhost:3002/blogs"
 
 export const getBlogs = async() =>{
     try{

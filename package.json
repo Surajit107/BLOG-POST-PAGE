@@ -17,12 +17,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "json-server-contact": "json-server --watch src/database/contact.json --host 192.168.123.7 --port 3001",
-    "json-server-blogs": "json-server --watch src/database/blogs.json --host 192.168.123.7 --port 3002",
-    "dev": "concurrently \"npm start\" \"npm run json-server-contact\" \"npm run json-server-blogs\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server-contact": "json-server --watch src/database/contact.json --host localhost --port 3001",
+    "json-server-blogs": "json-server --watch src/database/blogs.json --host localhost --port 3002",
+    "dev": "concurrently \"npm start\" \"npm run json-server-contact\" \"npm run json-server-blogs\""
   },
   "eslintConfig": {
     "extends": [
